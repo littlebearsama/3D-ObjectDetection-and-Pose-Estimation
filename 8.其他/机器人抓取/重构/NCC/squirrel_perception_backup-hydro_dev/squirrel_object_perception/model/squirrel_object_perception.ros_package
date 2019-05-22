@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ros:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ros="http://ros/1.0" name="squirrel_object_perception" author="Markus Bajones" author_email="markus.bajones@acin.tuwien.ac.at" description="The squirrel_object_perception package" license="GPL">
+  <node name="squirrel_look_for_objects" frequency="10.0">
+    <actionserver name="squirrel_object_perception" ActionType="squirrel_object_perception_msgs::LookForObjects"/>
+  </node>
+  <depend>squirrel_object_perception_msgs</depend>
+  <depend>sensor_msgs</depend>
+</ros:Package>

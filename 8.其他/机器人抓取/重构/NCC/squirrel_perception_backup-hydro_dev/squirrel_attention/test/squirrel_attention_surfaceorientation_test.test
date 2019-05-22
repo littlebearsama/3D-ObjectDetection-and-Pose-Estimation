@@ -1,0 +1,19 @@
+<launch> 
+  
+  <arg name="cloud_name" default="$(find squirrel_attention)/data/test45.pcd" />
+  <arg name="ground_truth" default="$(find squirrel_attention)/data/test45_surfaceorientation" />
+  
+  <node name="squirrel_attention_surfaceorientation"
+        pkg="squirrel_attention"
+        type="squirrel_attention_surfaceorientation" 
+        required="true" output="screen">
+  </node>
+ 
+  <test test-name="squirrel_attention_surfaceorientation_test"
+        pkg="squirrel_attention"
+        type="squirrel_attention_surfaceorientation_test"
+        time-limit="6000.0">
+        <param name="cloud_name" type="string" value="$(arg cloud_name)"/>
+        <param name="ground_truth" type="string" value="$(arg ground_truth)"/> 
+  </test>
+</launch>

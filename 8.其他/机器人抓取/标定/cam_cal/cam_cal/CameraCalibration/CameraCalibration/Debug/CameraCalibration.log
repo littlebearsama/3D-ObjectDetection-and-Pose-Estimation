@@ -1,0 +1,16 @@
+﻿生成启动时间为 2016/10/26 22:28:32。
+     1>项目“D:\VS2012Test\CameraCalibration\CameraCalibration\CameraCalibration.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\ProgramFilesD\VS2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt CameraCalibration.cpp
+         CameraCalibration.cpp
+     1>d:\vs2012test\cameracalibration\cameracalibration\cameracalibration.cpp(107): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>d:\vs2012test\cameracalibration\cameracalibration\cameracalibration.cpp(108): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>d:\vs2012test\cameracalibration\cameracalibration\cameracalibration.cpp(139): warning C4018: “<”: 有符号/无符号不匹配
+       Link:
+         D:\ProgramFilesD\VS2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VS2012Test\CameraCalibration\Debug\CameraCalibration.exe" /INCREMENTAL /NOLOGO opencv_ml2413d.lib opencv_calib3d2413d.lib opencv_contrib2413d.lib opencv_core2413d.lib opencv_features2d2413d.lib opencv_flann2413d.lib opencv_gpu2413d.lib opencv_highgui2413d.lib opencv_imgproc2413d.lib opencv_legacy2413d.lib opencv_objdetect2413d.lib opencv_ts2413d.lib opencv_video2413d.lib opencv_nonfree2413d.lib opencv_ocl2413d.lib opencv_photo2413d.lib opencv_stitching2413d.lib opencv_superres2413d.lib opencv_videostab2413d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\VS2012Test\CameraCalibration\Debug\CameraCalibration.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VS2012Test\CameraCalibration\Debug\CameraCalibration.lib" /MACHINE:X86 Debug\CameraCalibration.obj
+         CameraCalibration.vcxproj -> D:\VS2012Test\CameraCalibration\Debug\CameraCalibration.exe
+     1>已完成生成项目“D:\VS2012Test\CameraCalibration\CameraCalibration\CameraCalibration.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.24

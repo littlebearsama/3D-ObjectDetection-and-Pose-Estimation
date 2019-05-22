@@ -1,0 +1,42 @@
+<launch> 
+  <node name="squirrel_attention_3Dsymmetry"
+        pkg="squirrel_attention"
+        type="squirrel_attention_3Dsymmetry" 
+        required="true" output="screen">
+  </node>
+
+  <node name="squirrel_attention_color"
+        pkg="squirrel_attention"
+        type="squirrel_attention_color" 
+        required="true" output="screen">
+  </node>
+
+  <node name="squirrel_attention_height"
+        pkg="squirrel_attention"
+        type="squirrel_attention_height" 
+        required="true" output="screen">
+  </node>
+  <node name="squirrel_attention_itti"
+        pkg="squirrel_attention"
+        type="squirrel_attention_itti" 
+        required="true" output="screen">
+  </node>
+
+  <node name="squirrel_attention_location"
+        pkg="squirrel_attention"
+        type="squirrel_attention_location" 
+        required="true" output="screen">
+  </node>
+
+  <node name="squirrel_attention_surfaceorientation"
+        pkg="squirrel_attention"
+        type="squirrel_attention_surfaceorientation" 
+        required="true" output="screen">
+  </node>
+
+  <node name="squirrel_attention_symmetry"
+        pkg="squirrel_attention"
+        type="squirrel_attention_symmetry" 
+        required="true" output="screen">
+  </node>
+</launch>

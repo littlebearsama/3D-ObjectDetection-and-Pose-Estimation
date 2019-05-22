@@ -1,0 +1,226 @@
+/**
+ * $Id$
+ *
+ * Michael Zillich, 2004-3-04
+ * Johann Prankl, 2011-04-26
+ */
+
+#include <math.h>
+
+namespace PMath 
+{
+
+static const double eps = 1e-12;
+static const double feps = 1e-6;
+static const double pi = M_PI;
+static const double two_pi = 2*M_PI;
+static const double sqrt_two_pi = sqrt(two_pi);
+
+/**
+ * Returns true if the value is near zero (+/- epsilon)
+ * Our epsion is 1e-12
+ */
+inline bool IsZero(double d)
+{
+  return fabs(d) < eps;
+}
+
+inline bool IsZero(float d)
+{
+  return fabs(d) < feps;
+}
+
+/**
+ * Returns true if the values are equal (+/- epsilon)
+ * Our epsion is 1e-12
+ */
+inline bool IsEqual(double a, double b)
+{
+  return fabs(a - b) < eps;
+}
+
+inline bool IsEqual(float a, float b)
+{
+  return fabs(a - b) < feps;
+}
+
+/**
+ * Round a double to int
+ */
+inline int SRound(double d)
+{
+  return (int)(d+.5);
+}
+
+/**
+ * Round a double to int
+ */
+template <class T1>
+inline int Round(T1 d)
+{
+  return (int)(d+.5);
+}
+
+template <class Num>
+inline Num Sqr(Num x)
+{
+  return x*x;
+}
+
+template <class Num>
+inline Num Max(Num a, Num b)
+{
+  return (a >= b ? a : b);
+}
+
+template <class Num>
+inline Num Min(Num a, Num b)
+{
+  return (a <= b ? a : b);
+}
+
+template <class Num>
+inline int Sign(Num x)
+{
+  if(x < (Num)0)
+    return -1;
+  else if(x > (Num)0)
+    return 1;
+  else
+    return 0;
+}
+
+template <class T>
+inline void Swap(T &a, T &b)
+{
+  T t = a;
+  a = b;
+  b = t;
+}
+
+template <class Num>
+inline bool Between(Num x, Num l, Num u)
+{
+  return l < x && x < u;
+}
+
+template <class Num>
+inline bool BetweenEq(Num x, Num l, Num u)
+{
+  return l <= x && x <= u;
+}
+
+inline int RandInt()
+{
+  return rand();
+}
+
+/**
+ * Returns a pseudo random number in [0.0, 1.0]
+ */
+inline float FRand()
+{
+  return rand()/((float)RAND_MAX + 1.);
+}
+
+inline float ExpDev(float lambda)
+{
+  float dum;
+  do
+    dum = FRand();
+  while (dum == 0.);
+  return -log(dum)/lambda;
+}
+
+/**
+ * we want 99% probability of getting with expdev() a number smaller max
+ * this requires a lambda of the exponential distribution:
+ * lambda = norm/max;    (e.g. norm = -log(0.01) = 4.6
+ *                          or norm = -log(0.0001) = 9.2)
+ */
+inline int ExpSelect(int max)
+{
+  int i;
+  float lambda = 4.6/(float)max;
+  do
+    i = (int)(ExpDev(lambda));
+  while(i > max);
+  return i;
+}
+
+/**
+ * Scale angle to [0..2pi[
+ */
+inline double ScaleAngle_0_2pi(double a)
+{
+  while(a >= two_pi) a -= two_pi;
+  while(a < 0.) a += two_pi;
+  return a;
+}
+
+/**
+ * Scale angle to [-pi..pi[
+ */
+inline double ScaleAngle_mpi_pi(double a)
+{
+  while(a >= pi) a -= two_pi;
+  while(a < -pi) a += two_pi;
+  return a;
+}
+
+/**
+ * Scale angle to [0..pi[
+ */
+inline double ScaleAngle_0_pi(double a)
+{
+  while(a >= pi) a -= pi;
+  while(a < 0.) a += pi;
+  return a;
+}
+
+/**
+ * Difference of two angles b - a. The resulting angle is scaled to [-pi..pi[
+ */
+inline double DiffAngle_mpi_pi(double b, double a)
+{
+  return ScaleAngle_mpi_pi(b - a);
+}
+
+/**
+ * Difference of two angles b - a. The resulting angle is scaled to [0..2pi[
+ */
+inline double DiffAngle_0_2pi(double b, double a)
+{
+  return ScaleAngle_0_2pi(b - a);
+}
+
+/**
+ * Angles between (undirected) lines. The result is scaled to [0..pi/2[
+ * The difference is always positive and the smaller of the two possible
+ * differences is returned, i.e. diff is [0..pi/2[
+ * Note that we never return a difference of 0 but rather the angular
+ * resolution.
+ */
+inline double AngleBetweenLines(double b, double a)
+{
+  // note: lines are undirected, i.e. their orientation is [0..pi[
+  double c = ScaleAngle_0_pi(b) - ScaleAngle_0_pi(a);
+  if(c < 0)
+    c = -c;
+  if(c >=  M_PI_2)
+     c = M_PI - c;
+  return c;
+}
+
+/**
+ * Scale an integer angle to [0..8[
+ */
+inline int ScaleIntAngle_0_8(int a)
+{
+  while(a >= 8) a -= 8;
+  while(a < 0) a += 8;
+  return a;
+}
+
+}
+

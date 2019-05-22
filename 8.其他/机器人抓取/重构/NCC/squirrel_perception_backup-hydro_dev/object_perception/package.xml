@@ -1,0 +1,19 @@
+<package>
+  <name>object_perception</name>
+  <version>0.0.1</version>
+  <description>meta-package for object perception components</description>
+  <maintainer email="michael.cashmore@kcl.ac.uk">michael</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <run_depend>squirrel_attention</run_depend>
+  <run_depend>squirrel_classification</run_depend>
+  <run_depend>squirrel_object_perception</run_depend>
+  <run_depend>squirrel_segmentation</run_depend>
+  <run_depend>v4r</run_depend>
+
+  <export>
+	<metapackage/>
+  </export>
+</package>

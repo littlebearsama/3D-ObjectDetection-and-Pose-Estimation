@@ -1,0 +1,15 @@
+guess successful
+cal real successful
+calibration successful
+fx :541.081
+fy :541.07
+cx :316.909
+cy :232.932
+k1 :0.0611364
+k2 :-0.140657
+p1 :-0.00226472
+p2 :0.00061114
+p3 :0.0761741
+out successful
+Correct Image
+Wait for Key

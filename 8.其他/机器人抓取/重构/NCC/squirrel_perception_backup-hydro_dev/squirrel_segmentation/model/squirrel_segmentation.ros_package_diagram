@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:ros="http://ros/1.0" xmi:id="_o8RDAGjnEeSkl4fgzZrzig" type="RosPackage" name="squirrel_segmentation.ros_package_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_5wywIGjnEeSkl4fgzZrzig" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_5w0lUGjnEeSkl4fgzZrzig" type="5008"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_5w1zcGjnEeSkl4fgzZrzig" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_GY2K4GjqEeSfy4FGVYQOBA" type="3001">
+        <element xmi:type="ros:Parameter" href="squirrel_segmentation.ros_package#//@node.0/@parameter.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_GY2x8GjqEeSfy4FGVYQOBA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_J-FzQGjqEeSfy4FGVYQOBA" type="3001">
+        <element xmi:type="ros:Parameter" href="squirrel_segmentation.ros_package#//@node.0/@parameter.1"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_J-FzQWjqEeSfy4FGVYQOBA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_5w1zcWjnEeSkl4fgzZrzig" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_5w1zcmjnEeSkl4fgzZrzig"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_5w1zc2jnEeSkl4fgzZrzig"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_FRLqIGjoEeSkl4fgzZrzig" type="3002">
+      <children xmi:type="notation:DecorationNode" xmi:id="_FRM4QGjoEeSkl4fgzZrzig" type="5002"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_FRLqIWjoEeSkl4fgzZrzig"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_FRLqImjoEeSkl4fgzZrzig" fontName="Ubuntu"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_FRLqI2joEeSkl4fgzZrzig"/>
+      <element xmi:type="ros:ServiceServer" href="squirrel_segmentation.ros_package#//@node.0/@serviceServer.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FRLqJGjoEeSkl4fgzZrzig" x="372" y="72"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_kvKegGjpEeSfy4FGVYQOBA" type="3002">
+      <children xmi:type="notation:DecorationNode" xmi:id="_kvMTsGjpEeSfy4FGVYQOBA" type="5002"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_kvKegWjpEeSfy4FGVYQOBA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_kvKegmjpEeSfy4FGVYQOBA" fontName="Ubuntu"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_kvKeg2jpEeSfy4FGVYQOBA"/>
+      <element xmi:type="ros:ServiceServer" href="squirrel_segmentation.ros_package#//@node.0/@serviceServer.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kvKehGjpEeSfy4FGVYQOBA"/>
+    </children>
+    <element xmi:type="ros:Node" href="squirrel_segmentation.ros_package#//@node.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5wywIWjnEeSkl4fgzZrzig" x="276" y="180" width="373" height="265"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_o8RDAWjnEeSkl4fgzZrzig"/>
+  <element xmi:type="ros:Package" href="squirrel_segmentation.ros_package#/"/>
+</notation:Diagram>

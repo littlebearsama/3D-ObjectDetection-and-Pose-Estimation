@@ -1,0 +1,23 @@
+<launch>
+
+  <arg name="model_filename" default="$(find squirrel_segmentation)/data/ST-TrainAll.txt.model" />
+  <arg name="scaling_filename" default="$(find squirrel_segmentation)/data/ST-TrainAll.txt.scalingparams" />
+  <arg name="cloud_name" default="$(find squirrel_segmentation)/data/test45.pcd" />
+  <arg name="ground_truth" default="$(find squirrel_segmentation)/data/test45_mask_complete.png" />
+  
+  <node name="squirrel_segmentation"
+        pkg="squirrel_segmentation"
+        type="squirrel_segmentation" 
+        required="true" output="screen">
+        <param name="model_filename" type="string" value="$(arg model_filename)"/>
+        <param name="scaling_filename" type="string" value="$(arg scaling_filename)"/>
+  </node>
+ 
+  <test test-name="squirrel_segmentation_test"
+        pkg="squirrel_segmentation"
+        type="squirrel_segmentation_test"
+        time-limit="6000.0">
+        <param name="cloud_name" type="string" value="$(arg cloud_name)"/>
+        <param name="ground_truth" type="string" value="$(arg ground_truth)"/> 
+  </test>
+</launch>

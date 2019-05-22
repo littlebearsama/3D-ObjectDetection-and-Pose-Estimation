@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ros:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ros="http://ros/1.0" name="squirrel_classification" author="Michael Zillich" author_email="michael.zillich@tuwien.ac.at" description="The squirrel_classification package" license="TODO">
+  <node name="squirrel_classification">
+    <serviceServer name="squirrel_classify" msg="squirrel_object_perception_msgs::classify"/>
+  </node>
+  <depend>std_msgs</depend>
+  <depend>squirrel_object_perception_msgs</depend>
+</ros:Package>

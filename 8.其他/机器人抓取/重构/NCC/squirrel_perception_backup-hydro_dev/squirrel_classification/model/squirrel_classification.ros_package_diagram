@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:ros="http://ros/1.0" xmi:id="_kwiocGjyEeSrGZP2mKGh6Q" type="RosPackage" name="squirrel_classification.ros_package_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_lcw1QGjyEeSrGZP2mKGh6Q" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_lcw1QmjyEeSrGZP2mKGh6Q" type="5008"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_lcxcUGjyEeSrGZP2mKGh6Q" type="7001">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_lcxcUWjyEeSrGZP2mKGh6Q" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_lcxcUmjyEeSrGZP2mKGh6Q"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_lcxcU2jyEeSrGZP2mKGh6Q"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_iwEMMGj3EeSrGZP2mKGh6Q" type="3002">
+      <children xmi:type="notation:DecorationNode" xmi:id="_iwEzQGj3EeSrGZP2mKGh6Q" type="5002"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_iwEMMWj3EeSrGZP2mKGh6Q"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_iwEMMmj3EeSrGZP2mKGh6Q" fontName="Ubuntu"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_iwEMM2j3EeSrGZP2mKGh6Q"/>
+      <element xmi:type="ros:ServiceServer" href="squirrel_classification.ros_package#//@node.0/@serviceServer.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iwEMNGj3EeSrGZP2mKGh6Q"/>
+    </children>
+    <element xmi:type="ros:Node" href="squirrel_classification.ros_package#//@node.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lcw1QWjyEeSrGZP2mKGh6Q" x="415" y="230"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_kwiocWjyEeSrGZP2mKGh6Q"/>
+  <element xmi:type="ros:Package" href="squirrel_classification.ros_package#/"/>
+</notation:Diagram>

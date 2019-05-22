@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ros:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ros="http://ros/1.0" name="squirrel_segmentation" author="epotapova" author_email="potapova@acin.tuwien.ac.at" description="The squirrel_segmentation package" license="TODO">
+  <node name="squirrel_segmentation_incremental">
+    <serviceServer name="squirrel_segmentation_incremental_init" msg="squirrel_object_perception_msgs::segment_init"/>
+    <serviceServer name="squirrel_segmentation_incremental_once" msg="squirrel_object_perception_msgs::segment_once"/>
+    <parameter name="model_filename_" obligatory="true" type="string"/>
+    <parameter name="scaling_filename_" obligatory="true" type="string" value=""/>
+  </node>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>genmsg</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>squirrel_object_perception_msgs</depend>
+  <depend>v4r</depend>
+</ros:Package>

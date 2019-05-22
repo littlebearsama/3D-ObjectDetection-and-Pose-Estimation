@@ -1,0 +1,47 @@
+
+-----------------------------------------------------
+#000001 [workaround]
+
+Errormessage:
+../../src/xcb_io.c:183: process_responses: Assertion `!(req && current_request && !(((long) (req->sequence) - (long) (current_request)) <= 0))' failed.
+
+Trigger:
+Occurs when resizing the window while rendering.
+
+Possible source of bug:
+tgTomGineThread
+
+System:
+Ubuntu 10.04
+Kernel Linux 2.6.32-33-generic
+OpenGL Version: 3.2.0 NVIDIA 195.36.24
+
+Links:
+https://bugzilla.redhat.com/show_bug.cgi?id=616640
+
+Workaround:
+Be sure you haven't switched Visual Effects to None.
+System -> Preferences -> Visual Effects
+
+-----------------------------------------------------
+#000002 [unsolved]
+
+Errormessage:
+none
+
+Trigger:
+tgImageProcessor::thinning.
+
+Source of bug:
+NVIDIA driver are not working properly 260.* + 285.*
+
+System:
+Ubuntu 10.04
+Kernel Linux 2.6.32-33-generic
+OpenGL Version: 3.2.0 NVIDIA 260.* bzw. 285.* & cuda development driver
+
+-----------------------------------------------------
+#000003
+
+
+

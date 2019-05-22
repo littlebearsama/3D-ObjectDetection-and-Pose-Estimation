@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vtkImageNormalizedCrossCorrelationExample", "vtkImageNormalizedCrossCorrelationExample.vcxproj", "{49D81036-CAB1-3238-A7BF-C6F72746D3A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		MinSizeRel|x64 = MinSizeRel|x64
+		Release|x64 = Release|x64
+		RelWithDebInfo|x64 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49D81036-CAB1-3238-A7BF-C6F72746D3A5}.Debug|x64.ActiveCfg = Debug|x64
+		{49D81036-CAB1-3238-A7BF-C6F72746D3A5}.Debug|x64.Build.0 = Debug|x64
+		{49D81036-CAB1-3238-A7BF-C6F72746D3A5}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{49D81036-CAB1-3238-A7BF-C6F72746D3A5}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{49D81036-CAB1-3238-A7BF-C6F72746D3A5}.Release|x64.ActiveCfg = Release|x64
+		{49D81036-CAB1-3238-A7BF-C6F72746D3A5}.Release|x64.Build.0 = Release|x64
+		{49D81036-CAB1-3238-A7BF-C6F72746D3A5}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{49D81036-CAB1-3238-A7BF-C6F72746D3A5}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22FF22D9-AEA3-3BAD-87C9-C17A64847234}
+	EndGlobalSection
+EndGlobal

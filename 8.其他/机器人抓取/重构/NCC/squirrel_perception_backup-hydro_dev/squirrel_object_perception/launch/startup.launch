@@ -1,0 +1,8 @@
+<launch> 
+  <node name="squirrel_look_for_objects"
+        pkg="squirrel_object_perception"
+        type="squirrel_look_for_objects"
+        required="true" output="screen">
+  </node>
+
+</launch>

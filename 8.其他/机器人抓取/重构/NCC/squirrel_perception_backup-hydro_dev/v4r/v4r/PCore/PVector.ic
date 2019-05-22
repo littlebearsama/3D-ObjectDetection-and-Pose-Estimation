@@ -1,0 +1,223 @@
+/**
+ * $Id$
+ */
+
+
+namespace PVec 
+{
+
+static const double eps = 1e-12;
+
+inline bool IsZero(double d)
+{
+  return fabs(d) < eps;
+}
+
+template<typename T>
+inline T Sqr(T x)
+{
+  return x*x;
+}
+
+template<typename T1,typename T2>
+inline void NormalClockwise(const T1 v[2], T2 r[2])
+{
+  r[0] = v[1];
+  r[1] = -v[0];
+}
+
+template<typename T1,typename T2>
+inline void NormalAntiClockwise(const T1 v[2], T2 r[2])
+{
+  r[0] = -v[1];
+  r[1] = v[0];
+}
+
+template<typename T1,typename T2, typename T3>
+inline void Add2(const T1 v1[2], const T2 v2[2], T3 r[2])
+{
+  r[0] = v1[0]+v2[0];
+  r[1] = v1[1]+v2[1];
+}
+
+template<typename T1,typename T2, typename T3>
+inline void Sub2(const T1 v1[2], const T2 v2[2], T3 r[2])
+{
+  r[0] = v1[0]-v2[0];
+  r[1] = v1[1]-v2[1];
+}
+
+template<typename T1,typename T2>
+inline T1 Dot2(const T1 a[2], const T2 b[2])
+{
+  return a[0]*b[0] + a[1]*b[1];
+}
+
+template<typename T1,typename T2>
+inline T1 Cross2(const T1 a[2], const T2 b[2])
+{
+  return a[0]*b[1] - a[1]*b[0];
+}
+
+template<typename T1,typename T2>
+inline T1 Distance2(const T1 d1[2], const T2 d2[2])
+{
+  return sqrt(Sqr(d1[0]-d2[0])+Sqr(d1[1]-d2[1]));
+}
+
+template<typename T1,typename T2>
+inline T1 DistanceSqr2(const T1 d1[2], const T2 d2[2])
+{
+  return Sqr(d1[0]-d2[0])+Sqr(d1[1]-d2[1]);
+}
+
+template<typename T1>
+inline T1 Norm2(const T1 v[2])
+{
+  return sqrt(Sqr(v[0]) + Sqr(v[1]));
+}
+
+template<typename T1,typename T2>
+inline void Normalise2(const T1 s[2], T2 d[2])
+{
+  Div2(s,Norm2(s),d);
+}
+
+template<typename T1,typename T2, typename T3>
+inline void Mul2(const T1 v[2], T2 s, T3 r[2])
+{
+  r[0] = v[0]*s;
+  r[1] = v[1]*s;
+}
+
+template<typename T1,typename T2, typename T3>
+inline void Div2(const T1 v[2], T2 s, T3 r[2])
+{
+  s = 1./s;
+  r[0] = v[0]*s;
+  r[1] = v[1]*s;
+}
+
+template<typename T1>
+inline T1 PolarAngle(const T1 v[2])
+{
+  return atan2(v[1], v[0]);
+}
+
+template<typename T1,typename T2, typename T3>
+inline void Rotate2(const T1 v[2], const T2 phi, T3 r[2])
+{
+  double si = sin(phi), co = cos(phi);
+  r[0] = co*v[0] - si*v[1], r[1] = si*v[0] + co*v[1];
+}
+
+template<typename T1,typename T2, typename T3>
+inline void MidPoint2(const T1 a[2], const T2 b[2], T3 r[2])
+{
+  r[0] = (a[0]+b[0]) / 2.;
+  r[1] = (a[1]+b[1]) / 2.;
+}
+
+template<typename T1,typename T2>
+inline T1 AngleBetween2(const T1 d1[2], const T2 d2[2])
+{
+  double cosalpha=Dot2(d1,d2)/(Norm2(d1)*Norm2(d2));
+  return (fabs(1-cosalpha)<eps?0:acos(cosalpha));
+}
+
+
+template<typename T1>
+inline T1 Norm3(const T1 v[3])
+{
+  return sqrt(Sqr(v[0]) + Sqr(v[1]) + Sqr(v[2]));
+}
+
+template<typename T1, typename T2>
+inline void Normalise3(const T1 v[3], T2 r[3])
+{
+  Div3(v,Norm3(v),r);
+}
+
+
+template<typename T1,typename T2, typename T3>
+inline void Mul3(const T1 v[3], T2 s, T3 r[3])
+{
+  r[0] = v[0]*s;
+  r[1] = v[1]*s;
+  r[2] = v[2]*s;
+}
+
+template<typename T1,typename T2, typename T3>
+inline void Div3(const T1 v[3], T2 s, T3 r[3])
+{
+  s = 1./s;
+  r[0] = v[0]*s;
+  r[1] = v[1]*s;
+  r[2] = v[2]*s;
+}
+
+template<typename T1,typename T2, typename T3>
+inline void Sub3(const T1 v1[3], const T2 v2[3], T3 r[3])
+{
+  r[0] = v1[0]-v2[0];
+  r[1] = v1[1]-v2[1];
+  r[2] = v1[2]-v2[2];
+}
+
+template<typename T1,typename T2, typename T3>
+inline void Add3(const T1 v1[3], const T2 v2[3], T3 r[3])
+{
+  r[0] = v1[0]+v2[0];
+  r[1] = v1[1]+v2[1];
+  r[2] = v1[2]+v2[2];
+}
+
+template<typename T1,typename T2>
+inline T1 Dot3(const T1 v1[3], const T2 v2[3])
+{
+  return v1[0]*v2[0] + v1[1]*v2[1] + v1[2]*v2[2];
+}
+
+template<typename T1,typename T2>
+inline T1 Distance3(const T1 d1[3], const T2 d2[3])
+{
+  return sqrt(Sqr(d1[0]-d2[0])+Sqr(d1[1]-d2[1])+Sqr(d1[2]-d2[2]));
+}
+
+template<typename T1,typename T2>
+inline T1 DistanceSqr3(const T1 d1[3], const T2 d2[3])
+{
+  return Sqr(d1[0]-d2[0])+Sqr(d1[1]-d2[1])+Sqr(d1[2]-d2[2]);
+}
+
+template<typename T1,typename T2>
+inline T1 AngleBetween3(const T1 d1[3], const T2 d2[3])
+{
+  double cosalpha=Dot3(d1,d2)/(Norm3(d1)*Norm3(d2));
+  return (fabs(1-cosalpha)<eps?0:acos(cosalpha));
+}
+
+template<typename T1,typename T2, typename T3>
+inline void AddN(const T1 *d1, const T2 *d2, T3 *r, unsigned size)
+{
+  for (unsigned i=0; i<size; i++)
+    r[i] = d1[i]+d2[i];
+}
+
+template<typename T1,typename T2, typename T3>
+inline void MulN(const T1 *d1, const T2 *d2, T3 *r, unsigned size)
+{
+  for (unsigned i=0; i<size; i++)
+    r[i] = d1[i]*d2[i];
+}
+
+template<typename T1,typename T2>
+inline void CopyN(const T1 *d, T2 *r, unsigned size)
+{
+  for (unsigned i=0; i<size; i++)
+    r[i] = d[i];
+}
+
+}
+
+

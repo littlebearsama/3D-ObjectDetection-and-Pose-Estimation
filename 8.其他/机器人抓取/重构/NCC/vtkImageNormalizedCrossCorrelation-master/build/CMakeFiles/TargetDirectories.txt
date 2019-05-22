@@ -1,0 +1,3 @@
+C:/Users/xiaoxiong/Desktop/NCC/vtkImageNormalizedCrossCorrelation-master/build/CMakeFiles/vtkImageNormalizedCrossCorrelationExample.dir
+C:/Users/xiaoxiong/Desktop/NCC/vtkImageNormalizedCrossCorrelation-master/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/xiaoxiong/Desktop/NCC/vtkImageNormalizedCrossCorrelation-master/build/CMakeFiles/ZERO_CHECK.dir

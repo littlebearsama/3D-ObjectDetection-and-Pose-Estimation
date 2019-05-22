@@ -1,0 +1,13 @@
+﻿  zhangyouzheng_cal.cpp
+E:\opencv3.2\include\opencv2/core/mat.hpp(1926): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\opencv3.2\include\opencv2/core/persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\opencv3.2\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\opencv3.2\include\opencv2/imgproc.hpp(617): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+zhangyouzheng_cal.cpp(60): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+zhangyouzheng_cal.cpp(108): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+zhangyouzheng_cal.cpp(109): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+zhangyouzheng_cal.cpp(138): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+zhangyouzheng_cal.cpp(139): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  camera_calibration.cpp
+  正在生成代码...
+  cam_cal.vcxproj -> C:\Users\xiaoxiong\Desktop\机器人抓取\标定\cam_cal\x64\Debug\cam_cal.exe

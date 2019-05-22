@@ -1,0 +1,14 @@
+<launch>
+
+  <arg name="models_dir" default="$(find squirrel_classification)/data/models" />
+  <arg name="training_dir" default="$(find squirrel_classification)/data/training" />
+
+  <node name="squirrel_classification"
+        pkg="squirrel_classification"
+        type="squirrel_classification"
+        required="true" output="screen">
+        <param name="models_dir" type="string" value="$(arg models_dir)"/>
+        <param name="training_dir" type="string" value="$(arg training_dir)"/>
+  </node>
+
+</launch>

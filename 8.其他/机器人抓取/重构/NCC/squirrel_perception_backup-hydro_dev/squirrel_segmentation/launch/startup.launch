@@ -1,0 +1,19 @@
+<launch>
+
+  <arg name="model_filename" default="$(find squirrel_segmentation)/data/ST-TrainAll.txt.model" />
+  <arg name="scaling_filename" default="$(find squirrel_segmentation)/data/ST-TrainAll.txt.scalingparams" />
+  
+  <node name="squirrel_segmentation_incremental"
+        pkg="squirrel_segmentation"
+        type="squirrel_segmentation_incremental"
+        required="true" output="screen">
+        <param name="model_filename" type="string" value="$(arg model_filename)"/>
+        <param name="scaling_filename" type="string" value="$(arg scaling_filename)"/>
+  </node>
+
+  <node name="squirrel_segmentation_visualization"
+        pkg="squirrel_segmentation"
+        type="squirrel_segmentation_visualization">
+  </node>
+
+</launch>

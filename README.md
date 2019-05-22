@@ -1,16 +1,18 @@
 # 三维物体识别与位姿估计
 
-------
+*********
 
-- 解决问题
-- 实验方案
-- 综述与BenchMark
+* 解决问题
 
-------
+* 实验方案
+* 综述与BenchMark
+
+***********
 
 ## 0.相关
 
 1. 网站：[Detection and 6D Pose Estimation](<http://rkouskou.gitlab.io/research/6D_Object.html>)里面收录了很多文章和方法
+
 2. 没趣啊知乎：[meiqua知乎](<https://zhuanlan.zhihu.com/p/35638736>)
 3. 石头哥的目标检测(深度学习)笔记 [stone](<https://github.com/mensaochun/AwesomeDeepLearning/tree/master/ObjectDetection/summary>)
 
@@ -38,7 +40,7 @@
 
 
 
-------
+***********
 
 # 位姿估计方法
 

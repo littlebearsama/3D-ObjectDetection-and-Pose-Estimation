@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:ros="http://ros/1.0" xmi:id="_v6WxUGj5EeSB84VRgh06Sw" type="RosPackage" name="squirrel_object_perception.ros_package_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_47sO8Gj5EeSB84VRgh06Sw" type="2001" fontName="Cantarell">
+    <children xmi:type="notation:DecorationNode" xmi:id="_47uEIGj5EeSB84VRgh06Sw" type="5008"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_47v5UGj5EeSB84VRgh06Sw" type="7001">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_47v5UWj5EeSB84VRgh06Sw" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_47v5Umj5EeSB84VRgh06Sw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_47v5U2j5EeSB84VRgh06Sw"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_AHeOQGj8EeSB84VRgh06Sw" type="3005">
+      <children xmi:type="notation:DecorationNode" xmi:id="_AHe1UGj8EeSB84VRgh06Sw" type="5005"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_AHeOQWj8EeSB84VRgh06Sw"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_AHeOQmj8EeSB84VRgh06Sw" fontName="Cantarell"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_AHeOQ2j8EeSB84VRgh06Sw"/>
+      <element xmi:type="ros:ActionServer" href="squirrel_object_perception.ros_package#//@node.0/@actionserver.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AHeORGj8EeSB84VRgh06Sw"/>
+    </children>
+    <element xmi:type="ros:Node" href="squirrel_object_perception.ros_package#//@node.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_47sO8Wj5EeSB84VRgh06Sw" x="192" y="72"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_v6WxUWj5EeSB84VRgh06Sw"/>
+  <element xmi:type="ros:Package" href="squirrel_object_perception.ros_package#/"/>
+</notation:Diagram>

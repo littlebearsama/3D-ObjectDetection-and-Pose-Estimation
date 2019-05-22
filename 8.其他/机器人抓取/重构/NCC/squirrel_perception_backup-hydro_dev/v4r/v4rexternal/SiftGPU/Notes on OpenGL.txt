@@ -1,0 +1,29 @@
+!!!! Special attention if you have your own OpenGL code !!!
+
+The OpenGL-based implmentations of SiftGPU need valid OpenGL context to run properly.
+
+1. If you use the same OpenGL context for SiftGPU and your own your visualization
+	Make sure the OpenGL states are restored before calling SiftGPU. SiftGPU changes several 
+	OpenGL internal states, including texture binding to GL_TEXTURE_RECTANGLE_ARB and current
+	ViewPort. You might need to restore them for your own OpenGL part. To avoid this problem,
+	you can create a seperate GL context, and activate different context for different part. 
+
+	Note that GL_TEXTURE_RECTANGLE_ARB is always enabled in SiftGPU. When you have problem 
+    displaying textures, you can try first glDisable(GL_TEXTURE_RECTANGLE_ARB) before painting, 
+    but don't forget to call glEnable(GL_TEXTURE_RECTANGLE_ARB) after. (Thanks to Pilet)
+	
+2. How to create/setup an OpenGL context for SiftGPU
+
+	If you choose to let SiftGPU to manage OpenGL context, you can simply do that by 
+	SiftGPU::CreateContextGL and SiftMatchGPU::CreateContextGL.	When you mix your own OpenGL
+	code with SiftGPU, you need to re-call CreateContextGL before calling SiftGPU functions,
+	which will implicitly activate the internal OpenGL context. 
+	
+	
+	If you choose to create openGL contexts yourself when mixing SiftGPU with other openGL 
+	code, don't call SiftGPU::CreateContextGL or SiftMatchGPU::CreateContextGL; Instead you 
+	should first activate your OpenGL context (WglMakeCurrent in win32), and set GL_FILL 
+	for polygon mode, then call SiftGPU::VerifyContextGL or SiftMatchGPU::VerifyContextGL
+    for initialization. You should also setup in the same way before calling SiftGPU functions. 
+	
+

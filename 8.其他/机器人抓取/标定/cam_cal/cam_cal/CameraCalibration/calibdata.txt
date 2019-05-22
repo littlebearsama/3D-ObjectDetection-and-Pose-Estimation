@@ -1,0 +1,14 @@
+D:\CameraCalibration\chess1.bmp
+D:\CameraCalibration\chess2.bmp
+D:\CameraCalibration\chess3.bmp
+D:\CameraCalibration\chess4.bmp
+D:\CameraCalibration\chess5.bmp
+D:\CameraCalibration\chess6.bmp
+D:\CameraCalibration\chess7.bmp
+D:\CameraCalibration\chess8.bmp
+D:\CameraCalibration\chess9.bmp
+D:\CameraCalibration\chess10.bmp
+D:\CameraCalibration\chess11.bmp
+D:\CameraCalibration\chess12.bmp
+D:\CameraCalibration\chess13.bmp
+D:\CameraCalibration\chess14.bmp

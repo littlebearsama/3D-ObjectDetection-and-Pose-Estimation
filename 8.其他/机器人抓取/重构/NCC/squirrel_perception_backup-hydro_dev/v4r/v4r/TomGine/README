@@ -1,0 +1,39 @@
+Copyright (c) 2013, Vienna University of Technology. All rights reserved.
+
+Author: Thomas Moerwald (Vienna University of Technology)
+Email: moerwald@acin.tuwien.ac.at
+
+TomGine Render Engine
+API: tgEngine.h, tgTomGineThread.h
+
+OpenGL Rendering engine for displaying 3D objects.
+
+Modules:
+    - Rendering engine [tgTomGineThread, tgTomGineThreadPCL, tgEngine]
+    - Collission detection (Ray-Triangle, Ray-Model intersection tests) [tgCollission]
+    - Capture point-cloud from virtual scene [tgEngine]
+    - Error metric for different objectes [tgErrorMetric]
+    - View frustum calculations [tgFrustum]
+    - PLY model loader [tgModelLoader]
+    - 2D oszilloscope-like plotting [tgPlot2D]
+    - Quaternions [tgQuaternion]
+    - Creating basic shapes (box, sphere, cylinders, planes, ...) [tgShapeCreator]
+
+Requirements
+	rt		(real-time clock)
+	freeglut3-dev
+    libglew1.6-dev
+    X11, X11-xcb
+	libftgl2, libftgl-dev (render text in OpenGL)
+	libhighgui-dev (opencv - image file loading/saving)
+	
+Keyboard mapping:
+	[Escape]: Close programme
+	[w]: Toggle wireframe mode
+	[Keypad_0, z]:	Reset to initial camera view
+	
+Mouse mapping:
+	[Left Mouse Button + Move]: Rotate view about COR (Center of Rotation)
+	[Right Mouse Button + Move]: Translate view
+	[Mouse Wheel]: Zoom in/out
+
