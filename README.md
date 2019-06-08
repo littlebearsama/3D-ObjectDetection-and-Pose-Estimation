@@ -112,5 +112,5 @@ hough random forests霍夫随机森林
 
 ### 3.3D Convolutional Neural Networks — A Reading List
 
-[3D Convolutional Neural Networks — A Reading List](
+[3D Convolutional Neural Networks — A Reading List](<http://davidstutz.de/3d-convolutional-neural-networks-a-reading-list/>)
 
