@@ -114,3 +114,156 @@ hough random forests霍夫随机森林
 
 [3D Convolutional Neural Networks — A Reading List](<http://davidstutz.de/3d-convolutional-neural-networks-a-reading-list/>)
 
+### 4.3D_Deep_Learning_opensource
+#### 未开源：
+1. Mesh R-CNN <https://arxiv.org/abs/1906.01140>
+
+   TLNet：从单目到立体3D目标检测
+   《Triangulation Learning Network: from Monocular to Stereo 3D Object Detection》(CVPR2019)
+   论文：https://arxiv.org/abs/1906.01193
+
+2. 基于RGB和LiDAR融合的自动驾驶3D语义分割
+   《RGB and LiDAR fusion based 3D Semantic Segmentation for Autonomous Driving》
+
+   https://arxiv.org/abs/1906.00208
+
+3. 轻量级3D卷积网络，用于视频识别
+
+   https://arxiv.org/abs/1905.13388
+
+4. MonoDIS ：解构单目3D物体检测
+   《Disentangling Monocular 3D Object Detection》
+
+   论文：https://arxiv.org/abs/1905.12365
+
+   主页：https://research.mapillary.com/publication/MonoDIS/
+
+5. Shift R-CNN：具有闭式几何约束的深度单目3D目标检测
+   《Shift R-CNN: Deep Monocular 3D Object Detection with Closed-Form Geometric Constraints》（ICIP 2019）
+
+   论文：<https://arxiv.org/abs/1905.09970>
+
+6. PoseRBPF：用于6D目标姿态跟踪的Rao-Blackwellized粒子滤波器
+
+   论文：https://arxiv.org/abs/1905.09304
+
+7. MonoDIS ：解构单目3D物体检测
+   《Disentangling Monocular 3D Object Detection》
+
+   主页：https://research.mapillary.com/publication/MonoDIS/
+
+   论文：https://arxiv.org/abs/1905.12365
+
+8. 关键点几何推理的单目 3D 物体检测
+   《Monocular 3D Object Detection via Geometric Reasoning on Keypoints》
+
+   论文：https://arxiv.org/abs/1905.05618
+
+9. 利用高分辨率传感器标记数据训用于LiDAR距离的快速目标检测器
+   《Training a Fast Object Detector for LiDAR Range Images Using Labeled Data from Sensors with Higher Resolution》
+
+   论文：https://arxiv.org/abs/1905.03066
+
+10. 用于3D目标检测和语义分割的传感器融合
+    《Sensor Fusion for Joint 3D Object Detection and Semantic Segmentation》
+
+    论文：https://arxiv.org/abs/1904.11466
+
+11. RGB-D数据的可转移半监督3D目标检测
+    《Transferable Semi-supervised 3D Object Detection from RGB-D Data》
+
+    论文：https://arxiv.org/abs/1904.10300
+
+12. 用于点云中3D目标检测的Hough Voting
+    《Deep Hough Voting for 3D Object Detection in Point Clouds》
+
+    论文：https://arxiv.org/abs/1904.09664
+
+13. 学习2D到3D提升用于自动驾驶的3D目标检测
+    《Learning 2D to 3D Lifting for Object Detection in 3D for Autonomous Vehicles》
+
+    https://arxiv.org/abs/1904.08494
+
+14. Complexer-YOLO：语义点云上的实时3D目标检测和跟踪
+    《Complexer-YOLO: Real-Time 3D Object Detection and Tracking on Semantic Point Clouds》
+
+    https://arxiv.org/abs/1904.07537
+
+15. FVNet：用于从点云进行实时目标检测的3D前视图建议生成
+    《FVNet: 3D Front-View Proposal Generation for Real-Time Object Detection from Point Clouds》
+
+    https://arxiv.org/abs/1903.10750
+
+16. 伪LiDAR点云的单目3D目标检测
+    《Monocular 3D Object Detection with Pseudo-LiDAR Point Cloud》
+
+    https://arxiv.org/abs/1903.09847
+
+17. LaserNet：一种用于自主驾驶的高效概率 3D目标检测器
+
+    https://arxiv.org/abs/1903.08701
+
+18. 基于立体R-CNN的3D目标检测
+    《Stereo R-CNN based 3D Object Detection for Autonomous Driving》
+
+    https://arxiv.org/abs/1902.09738
+
+19. IXOR：点云的实时3D目标检测
+    《PIXOR: Real-time 3D Object Detection from Point Clouds》
+
+    https://arxiv.org/abs/1902.06326
+
+    
+
+
+
+#### 开源
+
+1. . 3D-BoNet：学习点云上3D实例分割的目标边界框
+   《Learning Object Bounding Boxes for 3D Instance Segmentation on Point Clouds》
+
+   论文：https://arxiv.org/abs/1906.01140
+
+   github：<https://github.com/Yang7879/3D-BoNet>
+
+2. 联合单目3D车辆检测与跟踪
+
+   github：https://github.com/ucbdrive/3d-vehicle-tracking
+
+3. PointRCNN+Frustum Pointnet
+
+   github：https://github.com/JenningsL/PointRCNN
+
+4. 3D BAT：基于Web的3D标注工具（3D Box）
+   《3D BAT: A Semi-Automatic, Web-based 3D Annotation Toolbox for Full-Surround, Multi-Modal Data Streams》
+
+   论文：https://arxiv.org/abs/1905.00525
+
+   github：https://github.com/walzimmer/3d-bat
+
+5. FANTrack：具有特征关联网络的3D多目标跟踪
+   《FANTrack: 3D Multi-Object Tracking with Feature Association Network》IEEE Intelligent Vehicles Symposium (IV 19)
+
+   论文：https://arxiv.org/abs/1905.02843
+
+   github：https://git.uwaterloo.ca/wise-lab/fantrack
+
+   
+
+6. CenterNet：将目标视为点
+   《Objects as Points》
+
+   论文：https://arxiv.org/abs/1904.07850
+
+   github:https://github.com/xingyizhou/CenterNet
+
+   github:https://github.com/see--/keras-centernet
+
+   youtube:https://www.youtube.com/watch?v=M63gSMdco2c&feature=youtu.be
+
+7. DISN：用于高质量单视图三维重建的深层隐式曲面网络
+   《DISN: Deep Implicit Surface Network for High-quality Single-view 3D Reconstruction》
+
+   论文：https://arxiv.org/abs/1905.10711
+
+   github：https://github.com/laughtervv/DISN
