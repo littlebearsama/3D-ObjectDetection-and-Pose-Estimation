@@ -267,3 +267,9 @@ hough random forests霍夫随机森林
    论文：https://arxiv.org/abs/1905.10711
 
    github：https://github.com/laughtervv/DISN
+   
+8. （3D目标检测）Pseudo-LiDAR++：自主驾驶中3D目标检测的精确深度
+
+   论文：https://arxiv.org/abs/1906.06310
+   
+   github：https://github.com/mileyan/Pseudo_Lidar_V2
