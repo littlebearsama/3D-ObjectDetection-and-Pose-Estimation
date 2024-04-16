@@ -1,4 +1,20 @@
-[个人博客](https://littlebearsama.github.io/2019/05/28/ObjectDetection-and-PoseEstimation/#more)
+
+
+
+
+----------------------
+
+# 记录：
+
+1. 温伯文-CVPR2024满分论文！即插即用的6D物体姿态估计大模型 FoundationPose ( BOP排行榜第一名算法) 
+
+   https://github.com/NVlabs/FoundationPose
+
+![fefdb8ccc7ef58f2856f6dac4edef12](README.assets/fefdb8ccc7ef58f2856f6dac4edef12.png)
+
+-------------
+
+# TOO OLD
 **物体检测与位姿估计**
 
 针对刚性物体识别与位姿估计的方法主要分为三类：
@@ -8,8 +24,6 @@
 - 基于学习
 
 <!--more-->
-
-下面来细讲：
 
 [资料整理](<https://github.com/littlebearsama/ObjectDetection>)
 
