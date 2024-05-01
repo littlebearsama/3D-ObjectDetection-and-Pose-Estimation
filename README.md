@@ -6,8 +6,11 @@
 
 # 记录：
 
-1. 温伯文-CVPR2024满分论文！即插即用的6D物体姿态估计大模型 FoundationPose ( BOP排行榜第一名算法)  https://github.com/NVlabs/FoundationPose
-2.  英伟达位姿态优化器，一个 6-DoF 姿态细化器，将图像、3D 模型和初始对象姿态作为输入。然后，该方法使用可微渲染器输出对象的姿态，该渲染器最大限度地减少对象重投影误差（RGB、深度、边缘、掩模等）。 https://github.com/NVlabs/diff-dope
+1.  温伯文-CVPR2024满分论文！即插即用的6D物体姿态估计大模型 FoundationPose ( BOP排行榜第一名算法)  https://github.com/NVlabs/FoundationPose
+
+2.   英伟达位姿态优化器，一个 6-DoF 姿态细化器，将图像、3D 模型和初始对象姿态作为输入。然后，该方法使用可微渲染器输出对象的姿态，该渲染器最大限度地减少对象重投影误差（RGB、深度、边缘、掩模等）。 https://github.com/NVlabs/diff-dope
+
+3.   https://github.com/nv-nguyen/gigapose 模版匹配
 
 -------------
 
