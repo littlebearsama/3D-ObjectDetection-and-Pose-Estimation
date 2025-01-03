@@ -1,10 +1,12 @@
 
-
-
-
-----------------------
-
 # 记录：
+----------------------
+9th Workshop on Recovering 6D Object Pose (R6D) - ECCV 2024
+[youtube](https://www.youtube.com/watch?v=C45a6v0fToY)
+[BOP Challenge 2024](https://bop.felk.cvut.cz/challenges/bop-challenge-2024/)
+
+
+
 * GS-Pose ：https://dingdingcai.github.io/gs-pose/
 
 * 温伯文-CVPR2024满分论文！即插即用的6D物体姿态估计大模型 FoundationPose ( BOP排行榜第一名算法)  https://github.com/NVlabs/FoundationPose
@@ -13,7 +15,7 @@
 
 * https://github.com/nv-nguyen/gigapose 模版匹配
 
--------------
+----------------------
 
 # TOO OLD
 **物体检测与位姿估计**
