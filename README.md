@@ -2,7 +2,9 @@
 # 记录：
 ----------------------
 9th Workshop on Recovering 6D Object Pose (R6D) - ECCV 2024
+
 [youtube](https://www.youtube.com/watch?v=C45a6v0fToY)
+
 [BOP Challenge 2024](https://bop.felk.cvut.cz/challenges/bop-challenge-2024/)
 
 
